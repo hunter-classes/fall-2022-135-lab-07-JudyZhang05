@@ -1,13 +1,13 @@
 * Fall 2022 - Lab 07
 
-* Last name:
+* Last name: Zhang
 
-* First name:
+* First name: Judy
 
-* GitHub username:
+* GitHub username: JudyZhang05
 
 * Notes:
-
+poorly formatted C++ file is ~bad-code.cpp~
 
   
 * General instructions:
