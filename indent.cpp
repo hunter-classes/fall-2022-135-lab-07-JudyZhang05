@@ -5,7 +5,7 @@
 
 int countChar(std::string line, char c){
 
-    std::string in; std::string copy; int bracket; bool loop = false; int result;
+    std::string in; std::string copy; int bracket; bool loop = false; int number_of_characters;
     std::ifstream file;
     file.open("bad-code-unindented.cpp");
     if (file.fail()){
@@ -13,12 +13,14 @@ int countChar(std::string line, char c){
         exit(1);
     }
     else{
-        while (std::getline(file, in)){
-            for ( int i = 0; i < in.length(); i++){
-                if ( in[i] == c){
-                    result += 1;
+        while (std::getline(file,in)){
+            for ( int v = 0; v < in.length(); v++){
+                if ( in[v] == c){
+                    number_of_characters += 1;
                 }
-                else if ( in[i] == ')'){
+            }
+            for ( int i = 0; i < in.length(); i++){
+                if ( in[i] == ')'){
                     loop = true;
                 }
                 else if (in[i] == '{'){
@@ -41,6 +43,7 @@ int countChar(std::string line, char c){
             loop = false;
             copy += in + '\n';
         }
+        
         file.close();
     }
 
@@ -55,5 +58,5 @@ int countChar(std::string line, char c){
     }
     out.close();
     
-    return result;
+    return number_of_characters;
 }
