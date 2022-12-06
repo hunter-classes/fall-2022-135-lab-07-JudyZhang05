@@ -3,6 +3,8 @@
 #include <fstream>
 #include "edit.h"
 
+//woah cool code
+
 std::string removeLeadingSpaces(std::string line){
     std::string word; bool loop = false;
 
