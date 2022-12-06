@@ -1,7 +1,7 @@
 #include <iostream>
 #include "edit.h"
 
-//such cool code
+//cool code
 
 int main(){
     std::cout << "\n\nTask A\n"<< removeLeadingSpaces("//bad-code\n\n") << std::endl;
