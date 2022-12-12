@@ -3,6 +3,8 @@
 #include <fstream>
 #include "edit.h"
 
+//wow even cooler code!
+
 int countChar(std::string line, char c){
 
     std::string in; std::string copy; int bracket; bool loop = false; int number_of_characters;
